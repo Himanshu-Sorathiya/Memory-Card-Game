@@ -1,0 +1,18 @@
+{
+  "name": "01---memory-card-game",
+  "version": "1.0.0",
+  "description": "In this Memory Card Game, 16 cards are placed randomly on the screen, and each pair of cards has the same image. The objective of the game is to find all the matching pairs by clicking on the cards.There’s no time limit to finding the matching cards, so players can take their time and focus on improving their memory.",
+  "main": "script.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i src/styles/tailwind.css -o dist/style.css -w",
+    "typescript": "npx tsc -w"
+  },
+  "author": "Himanshu Sorathiya",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
+  }
+}
