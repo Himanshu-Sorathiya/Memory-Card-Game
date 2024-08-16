@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .wrapper {
+    @apply flex h-screen w-screen items-center justify-center overflow-hidden bg-indigo-600;
+  }
+
+  .game-area {
+    @apply grid grid-cols-4 grid-rows-4 gap-4 rounded-lg bg-slate-200 p-6;
+  }
+
+  .card {
+    @apply flex h-24 w-24 items-center justify-center rounded-lg bg-white transition-transform duration-500 ease-in-out;
+    caret-color: transparent;
+  }
+
+  .card-img {
+    @apply h-16 w-16;
+  }
+
+  .flip-vertical-right {
+    @apply transition-transform duration-500 ease-in-out;
+    transform: rotateY(180deg);
+  }
+}
